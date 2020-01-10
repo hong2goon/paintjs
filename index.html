@@ -7,8 +7,40 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 </head>
 <body>
-    <canvas id="jsCanvas" class="canvas"></canvas>
-
+    <div class="wrap">
+      <canvas id="jsCanvas" class="canvas"></canvas>
+      <div class="controls">
+        <button class="controlsToggle">토글</button>
+        <div class="controls__range">
+          <span class="range__size"><i class="small"></i></span>
+          <input
+            type="range"
+            id="jsRange"
+            min="0.1"
+            max="5"
+            value="2.5"
+            step="0.1"
+          />
+          <span class="range__size"><i class="big"></i></span>
+        </div>
+        <div class="controls__btns">
+          <button id="jsMode" class="paint"><i class="icon"></i>paint</button>
+          <button id="jsSave" class="save"><i class="icon"></i>Save</button>
+        </div>
+        <div id="jscolors" class="controls__colors">
+          <button class="controls__color jsColor" style="background: #2c2c2c;"></button>
+          <button class="controls__color jsColor" style="background: #fff;"></button>
+          <button class="controls__color jsColor" style="background: #ff3b30;"></button>
+          <button class="controls__color jsColor" style="background: #ff9500;"></button>
+          <button class="controls__color jsColor" style="background: #ffcc00;"></button>
+          <button class="controls__color jsColor" style="background: #4cd963;"></button>
+          <button class="controls__color jsColor" style="background: #5ac8fa;"></button>
+          <button class="controls__color jsColor" style="background: #0579ff;"></button>
+          <button class="controls__color jsColor" style="background: #5856d6;"></button>
+        </div>
+      </div>
+    </div>
+    
     <!-- js -->
     <script src="js/app.js"></script>
 </body>
